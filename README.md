@@ -28,3 +28,4 @@ Currently only a few packages are available, feel free to open a PR if you'd lik
 - [Nix](https://nixos.org/nix/)
 - [Wasmtime](https://wasmtime.dev/)
 - [Wasmer](https://wasmer.io/)
+- [Bun](https://bum.sh/)

@@ -73,5 +73,11 @@
             "wasmer"
         ],
         "url": "https://get.wasmer.io/"
+    },
+    {
+        "names": [
+            "bun"
+        ],
+        "url": "https://bun.sh/install"
     }
 ]

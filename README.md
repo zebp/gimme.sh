@@ -31,3 +31,4 @@ Currently only a few packages are available, feel free to open a PR if you'd lik
 - [Bun](https://bum.sh/)
 - [Jabba](https://github.com/shyiko/jabba/)
 - [Yarn](https://yarnpkg.com/)
+- [Act](https://github.com/nektos/act)

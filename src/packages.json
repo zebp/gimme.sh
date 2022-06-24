@@ -94,5 +94,9 @@
             "yarn-pkg"
         ],
         "url": "https://yarnpkg.com/install.sh"
+    },
+    {
+        "names": ["act"],
+        "url": "https://raw.githubusercontent.com/nektos/act/master/install.sh"
     }
 ]

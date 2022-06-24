@@ -25,3 +25,4 @@ Currently only a few packages are available, feel free to open a PR if you'd lik
 - [Node Version Manager](https://nvm.sh/)
 - [Debian NodeSource](https://deb.nodesource.com/)
 - [Docker](https://docker.com)
+- [Nix](https://nixos.org/nix/)

@@ -54,5 +54,12 @@
             "docker"
         ],
         "url": "https://get.docker.com/"
+    },
+    {
+        "names": [
+            "nix",
+            "nixshell"
+        ],
+        "url": "https://nixos.org/nix/install"
     }
 ]

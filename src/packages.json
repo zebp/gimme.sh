@@ -67,5 +67,11 @@
             "wasmtime"
         ],
         "url": "https://wasmtime.dev/intall.sh"
+    },
+    {
+        "names": [
+            "wasmer"
+        ],
+        "url": "https://get.wasmer.io/"
     }
 ]

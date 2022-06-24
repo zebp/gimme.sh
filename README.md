@@ -26,3 +26,4 @@ Currently only a few packages are available, feel free to open a PR if you'd lik
 - [Debian NodeSource](https://deb.nodesource.com/)
 - [Docker](https://docker.com)
 - [Nix](https://nixos.org/nix/)
+- [Wasmtime](https://wasmtime.dev/)

@@ -61,5 +61,11 @@
             "nixshell"
         ],
         "url": "https://nixos.org/nix/install"
+    },
+    {
+        "names": [
+            "wasmtime"
+        ],
+        "url": "https://wasmtime.dev/intall.sh"
     }
 ]

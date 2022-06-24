@@ -79,5 +79,12 @@
             "bun"
         ],
         "url": "https://bun.sh/install"
+    },
+    {
+        "names": [
+            "jabba",
+            "java-version-manager"
+        ],
+        "url": "https://github.com/shyiko/jabba/raw/master/install.sh"
     }
 ]

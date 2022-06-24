@@ -30,3 +30,4 @@ Currently only a few packages are available, feel free to open a PR if you'd lik
 - [Wasmer](https://wasmer.io/)
 - [Bun](https://bum.sh/)
 - [Jabba](https://github.com/shyiko/jabba/)
+- [Yarn](https://yarnpkg.com/)

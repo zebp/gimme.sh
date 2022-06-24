@@ -86,5 +86,13 @@
             "java-version-manager"
         ],
         "url": "https://github.com/shyiko/jabba/raw/master/install.sh"
+    },
+    {
+        "names": [
+            "yarn",
+            "yarnpkg",
+            "yarn-pkg"
+        ],
+        "url": "https://yarnpkg.com/install.sh"
     }
 ]

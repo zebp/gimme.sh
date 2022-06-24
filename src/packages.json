@@ -1,0 +1,58 @@
+[
+    {
+        "names": [
+            "rust",
+            "rustup",
+            "cargo",
+            "rustc"
+        ],
+        "url": "https://sh.rustup.rs"
+    },
+    {
+        "names": [
+            "fnm",
+            "fastnodemanager",
+            "f-n-m"
+        ],
+        "url": "https://fnm.vercel.app/install"
+    },
+    {
+        "names": [
+            "oh-my-zsh",
+            "ohmyzsh"
+        ],
+        "url": "https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh"
+    },
+    {
+        "names": [
+            "deno",
+            "denojs"
+        ],
+        "url": "https://deno.land/install.sh"
+    },
+    {
+        "names": [
+            "nvm",
+            "node-version-manager",
+            "nodeversionmanager"
+        ],
+        "url": "https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh"
+    },
+    {
+        "names": [
+            "node",
+            "node18",
+            "nodesource",
+            "nodesource18",
+            "debnode",
+            "nodedeb"
+        ],
+        "url": "https://deb.nodesource.com/setup_18.x"
+    },
+    {
+        "names": [
+            "docker"
+        ],
+        "url": "https://get.docker.com/"
+    }
+]

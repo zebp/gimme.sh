@@ -1,6 +1,7 @@
 import { WebRouter } from "@zebp/routy";
 import { packageMap } from "./packages";
-import { notFoundResponse, notRedirect } from "./util";
+import { isProbablyABrowser, notFoundResponse, notRedirect } from "./util";
+import { router as browserRouter } from "./browser";
 
 const router = new WebRouter().get("/:package", (_request, _data, ctx) => {
   const { package: name } = ctx.params;
@@ -18,6 +19,10 @@ const router = new WebRouter().get("/:package", (_request, _data, ctx) => {
 
 export default {
   async fetch(request: Request): Promise<Response> {
+    if (isProbablyABrowser(request)) {
+      return browserRouter.route(request);
+    }
+
     return router.route(request);
   },
 };

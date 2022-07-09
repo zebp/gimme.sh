@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gimme.sh</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+      body {
+        height: calc(100vh - min(10vh, 20rem));
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(227, 227, 227);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+          "Open Sans", "Helvetica Neue", sans-serif;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: min(10vh, 20rem);
+        color: #303030;
+      }
+
+      #name {
+        font-size: 4rem;
+        font-family: "Fredoka One", cursive;
+      }
+
+      #subtitle {
+        font-weight: 600;
+      }
+
+      #footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        height: 3rem;
+        width: 100vw;
+      }
+
+      #footer-inner {
+        max-width: 20rem;
+        display: flex;
+        gap: 2ch;
+      }
+
+      #terminal {
+        margin: 10rem;
+        background-color: #1a1a1a;
+        padding: 1rem;
+        padding-block: 1.5rem;
+        border-radius: 0.5rem;
+        color: #aaa;
+        font-size: 1.5rem;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+      }
+
+      #hostname {
+        margin-left: auto;
+        font-style: italic;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+
+      .comment {
+        font-style: italic;
+        color: rgb(82, 172, 119);
+      }
+
+      .quiet {
+        color: #4a4a4a;
+      }
+
+      a {
+        text-decoration: none;
+        color: #212121;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="name">gimme.sh</h1>
+    <span id="subtitle" class="quiet"
+      >A registry of many install-via-curl install scripts on an easy to remember domain.</span
+    >
+
+    <div id="terminal">
+      <span class="comment"># Install via a simple curl!</span>
+      <br />
+      <div class="row">
+        <span>$ curl -sL https://gimme.sh/</span><span id="package" class="highlight">rust</span
+        ><span>&nbsp;| bash</span>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="footer-inner">
+        <a href="https://github.com/zebp/gimme.sh">GitHub</a>
+      </div>
+    </div>
+
+    <script>
+      const elem = document.getElementById("package");
+      const packages = ["rust", "deno", "yarn", "bun", "nix", "fmn", "zsh", "nvm", "act", "docker", "wasmer", "jabba"];
+      let i = 1;
+      setInterval(() => (elem.innerText = packages[i++ % packages.length]), 1000);
+    </script>
+  </body>
+</html>

@@ -4,11 +4,16 @@ const chalk = new Chalk({
   level: 3,
 });
 
-const wrapInEcho = (text: string) => `echo -e "${text}"`;
-export const textAsResponse = (text: string, status: number) => new Response(wrapInEcho(text), { status });
+function wrapInEcho(text: string) {
+  return `echo -e "${text}"`;
+}
 
-export const notFoundResponse = (name: string) =>
-  textAsResponse(
+export function textAsResponse(text: string, status: number) {
+  return new Response(wrapInEcho(text), { status });
+}
+
+export function notFoundResponse(name: string) {
+  return textAsResponse(
     "\n " +
       chalk.red("✗") +
       " Error!\n" +
@@ -21,9 +26,16 @@ export const notFoundResponse = (name: string) =>
       "\n",
     404,
   );
+}
 
 export const notRedirect = wrapInEcho(
   "\n " +
     chalk.red("✗") +
     ` If you're seeing this you forgot the ${chalk.bold.white("-L")} flag\n   to follow the redirect!\n`,
 );
+
+export function isProbablyABrowser(req: Request): boolean {
+  const userAgent = req.headers.get("accept");
+  if (userAgent === null) return true;
+  return userAgent.includes("text/html");
+}

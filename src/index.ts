@@ -7,6 +7,8 @@ const router = new WebRouter().get("/:package", (_request, _data, ctx) => {
   const { package: name } = ctx.params;
   const packageData = packageMap.get(name.toLowerCase());
 
+  console.log({ ...packageData, name });
+
   if (packageData === undefined) {
     return notFoundResponse(name);
   }
